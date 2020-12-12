@@ -55,7 +55,7 @@ def scrape_info(browser):
     tables = pd.read_html(facts_url)
 
     facts_df = tables[0]
-    facts_df.columns = ["Mars Fact", "Value"]
+    facts_df.columns = [" ", "Mars"]
 
     facts_html=facts_df.to_html(index=False)
 

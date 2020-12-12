@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>Mars</title>
@@ -22,7 +21,7 @@
         <!--News-->
         <div class="container">
             <h3>Latest Mars News</h3>
-            <h6 style="color: #c1440e">{{ mars_info.news_title }}</h6>
+            <h5><strong>{{ mars_info.news_title }}</strong></h6>
             <p>{{ mars_info.news_p }}</p>
         </div>
 
@@ -44,6 +43,7 @@
                 </div> 
             </div>
         </div>
+        <br>
 
         <!--Cards-->
         <h3 style="text-align: center;">Mars Hemispheres</h3>
@@ -53,7 +53,7 @@
                 <div class="row">
                     {% for item in mars_info.hemispheres_image_urls %}
                     <div class="col-md-6">
-                        <div class="card-text" style="margin: 30px;">
+                        <div class="card">
                             <img class="card-img-top" src="{{ item.img_url }}" />
                             <div class="card-body">
                                 <p class="card-text">{{ item.title }}</p>
